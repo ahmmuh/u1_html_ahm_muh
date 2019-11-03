@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-image: url('https://s3.envato.com/files/264869531/0037.jpg');
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    border-radius: 10px;
+    height: 80px;
+    border: 1px solid #fff;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-top: -60px;
+}
+
+nav ul li {
+    list-style-type: none;
+    line-height: 3rem;
+    padding: 6px 8px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 6.rem;
+    font-style: normal;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    height: 50vh;
+    background: #f8f3f3;
+    margin-top: -20px;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-coffee-hot-drink-afternoon-tea-banner-background-image_181987.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header p, h1 {
+    padding-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #e1e1e1;
+}
+
+main>div {
+    width: 100px;
+    margin: 2px;
+    font-size: 15px;
+    padding: 10px;
+    font-style:  normal;
+   
+}
+
+main .left-sidebar {
+    flex-grow: 1;
+}
+
+main .content-center {
+    flex-grow: 8;
+}
+/* home content */
+
+.home-content {
+    flex-grow: 8;
+
+}
+.home-content a {
+    background-color: green;
+    padding:  10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display:  block;
+    width: 115px;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 auto
+}
+.home-content >div {
+    width: 100%;
+    background-color: #ddd;
+    bottom: 0;
+}
+.home-content img {
+    width: 100%;
+    height: 400px;
+    
+}
+main .right-sidebar {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #222;
+    height: 30vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.footer ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+
+/*
+contact form style
+*/
+
+form {
+    border: 1px solid #222;
+}
+
+.form-group {
+    max-width: 100%;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.form-group :nth-last-child(input) {
+    margin-left: 100px;
+}
+
+#submit {
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 6px auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*
+contact form style ends
+*/
+
+/* product page style */
+
+.row .product {
+    width: 260px;
+    height: 230px;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: #222;
+    margin: 10px;
+    border:  1px solid #000;;
+}
+
+.col-sm button {
+    margin: 8px;
+    width: 140px;
+}
+
+/* product ends here */
+
+/* personal page style */
+
+.content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e1e1e1;
+}
+
+.content-center img {
+    width: 160px;
+    border-radius: 100px;
+}
+
+/* media query */
+
+@media (min-width:320px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    header h1, p {
+        text-align: center;
+        font-size: 26px;
+        color: #222;
+        font-style: oblique;
+    }
+    nav ul li a {
+        color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-sidebar, .content-center, .right-sidebar {
+        width: 95%;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .row .product {
+        width: 100%;
+    }
+}
